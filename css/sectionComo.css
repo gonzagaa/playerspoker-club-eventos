@@ -1,0 +1,77 @@
+#como {
+    overflow: hidden;
+    position: relative;
+}
+
+#como .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+
+    margin-top: 3rem;
+}
+
+#como .card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#como .card:nth-child(1) {
+    gap: 2rem;
+}
+
+#como .card:nth-child(1) h3 {
+    margin-left: .5rem;
+}
+
+
+#como .card h3 {
+    line-height: .9;
+    font-size: 8rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#como .card p {
+    text-align: left;
+    color: #ffffffe4;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+#como .card p span {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+@media (min-width: 1080px)  {
+    section#como .cards {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    section#como .cards .card {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 2rem;
+        padding-inline: 5%;
+        background: linear-gradient(45deg, #07438c41 0%, #0287c00f 100%);
+    }
+
+    section#como .cards .card  p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1700px) {
+    section#como .cards {
+    }
+}

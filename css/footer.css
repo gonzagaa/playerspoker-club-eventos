@@ -1,0 +1,13 @@
+#footer {
+    overflow: hidden;
+    position: relative;
+    background: #000000;
+
+    padding: 4rem;
+}
+
+#footer p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}

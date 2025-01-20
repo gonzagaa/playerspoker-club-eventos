@@ -1,0 +1,294 @@
+#home {
+  background: var(--bg-black);
+  min-height: 100vh;
+  overflow: hidden;
+
+  position: relative;
+
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+
+  transition: all 200ms ease-in-out;
+}
+
+#home .wrapper {
+  height: 100%;
+}
+
+#home .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#home .wrapper {
+  position: relative;
+  z-index: 3;
+}
+
+#home .circle {
+  position: absolute;
+  bottom: 0;
+  top: 620px;
+  z-index: 13;
+  transition: all 2s;
+}
+
+#home.on .circle {
+  transform: translate(0, -600px);
+}
+
+#home .blush {
+  display: none;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(#0a2542, transparent 50%);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  top: -35rem;
+  left: -50rem;
+  opacity: 0.2;
+
+  animation: moveblush infinite 4s linear;
+}
+
+#home .blush.dois {
+  background: radial-gradient(#0a2542, transparent 50%);
+  top: initial;
+  left: initial;
+  bottom: -45rem;
+  right: -60rem;
+}
+
+#home .eclipse {
+  animation: Rotation linear infinite 10s;
+  position: absolute;
+  opacity: 0.4;
+  bottom: -50rem;
+  left: -50rem;
+}
+
+@keyframes Rotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+#home img.logo {
+  margin-bottom: 2rem;
+  width: 7rem;
+}
+
+#home .text {
+  margin-top: 6rem;
+}
+
+#home h1 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+
+  line-height: 0.9;
+
+  position: relative;
+}
+
+#home h1 span {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+#home p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #dcdada;
+  line-height: 1.6;
+}
+
+#home a button {
+  margin-top: 2rem;
+}
+
+#home img.bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  filter: brightness(0.3) blur(2px);
+
+  mask-image: linear-gradient(to bottom, #000, transparent);
+}
+
+#home img.bg.desktop {
+  display: none;
+}
+
+#home .image {
+  width: 100%;
+  margin-top: 3rem;
+}
+#home .image img {
+  width: 100%;
+}
+
+@media (min-width: 1080px) {
+  header#home {
+    min-height: initial;
+    height: 100vh;
+    max-height: 100vh;
+
+    mask-image: linear-gradient(to bottom, #000 80%, transparent);
+  }
+
+  header#home .content {
+    height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    z-index: 2;
+  }
+
+  header#home .text {
+    margin-top: initial;
+  }
+
+  header#home {
+    justify-content: center;
+  }
+
+  header#home .blush {
+    display: inherit;
+  }
+
+  header#home img.bg.mobile {
+    display: none;
+  }
+
+  header#home img.bg {
+    display: inherit;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: brightness(0.6);
+
+    mask-image: none;
+    transform: initial;
+  }
+
+  header#home::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #000000e0 30%, transparent);
+    z-index: 1;
+  }
+
+  header#home .content {
+    text-align: center;
+    align-items: center;
+
+    display: grid;
+    gap: 10rem;
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  header#home .text {
+    margin-top: initial;
+  }
+
+  header#home .circle {
+    top: 820px;
+    width: 100%;
+  }
+
+  header#home .content .text {
+    text-align: left;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  header#home .content h1 {
+    line-height: 1.1;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  header#home .content p {
+    font-size: 1.6rem;
+  }
+
+  header#home .content .buttons {
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  header#home .content .buttons a button {
+    font-size: 1.4rem;
+  }
+
+  header#home .content .image {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1800px) {
+  header#home {
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  header#home .content {
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  header#home .content h1 {
+    font-size: 4rem;
+  }
+
+  header#home .content h3 {
+    font-size: 3rem;
+  }
+
+  header#home .content p {
+    font-size: 1.8rem;
+  }
+
+  header#home .content .buttons {
+    margin-top: 2rem;
+  }
+
+  header#home .content .buttons a button {
+    font-size: 1.8rem;
+  }
+
+  header#home .content {
+    text-align: center;
+    align-items: center;
+
+    display: grid;
+    gap: 10rem;
+    grid-template-columns: 1fr 1.2fr;
+  }
+}

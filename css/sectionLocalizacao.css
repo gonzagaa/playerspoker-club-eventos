@@ -1,0 +1,57 @@
+#localizacao {
+    overflow: hidden;
+    position: relative;
+}
+
+#localizacao .text p {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 400;
+
+    margin-block: 2rem;
+}
+
+#localizacao .text p span {
+    font-weight: 700;
+}
+
+#localizacao .text a {
+    color: #d2d2d2;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: all 200ms ease-in-out;
+}
+
+#localizacao .text a:hover {
+    color: #fff;
+}
+
+#localizacao .text a button {
+    margin-top: 2rem;
+}
+
+#localizacao .mapa iframe {
+    border-radius: 2rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+@media (min-width: 1080px) {
+    section#localizacao .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+    }
+
+    section#localizacao .content .text {
+        text-align: left;
+    }
+
+    section#localizacao .mapa iframe {
+        margin-top: 0;
+        height: 100%;
+    }
+}

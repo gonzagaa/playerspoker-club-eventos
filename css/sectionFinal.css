@@ -1,0 +1,50 @@
+
+#final {
+    position: relative;
+    overflow: hidden;
+}
+
+#final .content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    width: 100%;
+
+    padding: 3rem;
+}
+
+#final .content img.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: .3;
+    filter: brightness(.7);
+}
+
+#final .content .text {
+    position: relative;
+    z-index: 2;
+}
+
+#final .content .text p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    margin-block: 2rem;
+}
+
+@media (min-width: 1080px) {
+    section#final .content {
+        padding: 6rem;
+        border-radius: 3rem;
+    }
+
+    section#final .text {
+        text-align: left;
+        width: 50%;
+    }
+}

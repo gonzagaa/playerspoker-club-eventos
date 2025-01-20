@@ -1,0 +1,51 @@
+#conhecer {
+    position: relative;
+    overflow: hidden;
+}
+
+#conhecer .text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+
+    gap: 1rem;
+}
+
+#conhecer .text p {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+#conhecer .text p span {
+    font-weight: 600;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1080px) {
+    section#conhecer .text {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    section#conhecer .text p {
+        width: 90%;
+        font-size: 1.8rem;
+        position: relative;
+    }
+
+    section#conhecer .text p::before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        left: -2rem;
+        top: 0;
+        background: var(--gradient);
+    }
+}

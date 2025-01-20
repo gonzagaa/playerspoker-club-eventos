@@ -1,0 +1,88 @@
+#beneficios {
+    overflow: hidden;
+    position: relative;
+} 
+
+#beneficios img.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#beneficios .content {
+    position: relative;
+    z-index: 2;
+}
+
+#beneficios .content .text h2 {
+    text-align: left;
+}
+
+#beneficios .content .topics {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+
+    margin-block: 2rem;
+}
+
+#beneficios .content .topics .topic {
+    display: flex;
+    gap: .5rem;
+    margin-block: .5rem;
+}
+
+#beneficios .content .topics .topic ion-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+
+    min-width: 20px;
+    min-height: 20px;
+}
+
+#beneficios .text p {
+    font-size: 1.5rem;
+    color: #ffffffde;
+    font-weight: 300;
+}
+
+#beneficios .text p span {
+    font-weight: 600;
+    color: #fff;
+}
+
+
+@media (min-width: 1080px) {
+    section#beneficios .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+        align-items: center;
+    }
+
+    section#beneficios .content .text {
+        text-align: left;
+    }
+
+    section#beneficios .cards {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    section#beneficios .cards .card {
+        height: 100%;
+    }
+
+    section#beneficios img.bg {
+        opacity: 1;
+     mask-image: linear-gradient(to left, #000, transparent 70%);
+    }
+}

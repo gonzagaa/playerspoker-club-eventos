@@ -1,0 +1,46 @@
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a {
+    width: 100%;
+}
+
+a button {
+    background: var(--gradient);
+    width: 100%;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+
+    transition: all 200ms ease-in-out;
+}
+
+a button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+@media (min-width: 1080px) {
+    h2 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+
+    a button {
+        font-size: 1.8rem;
+        padding: 1.5rem 4rem;
+        width: initial;
+    }
+}
