@@ -151,7 +151,6 @@
     height: 100vh;
     max-height: 100vh;
 
-    mask-image: linear-gradient(to bottom, #000 90%, transparent);
   }
 
   header#home .content {
@@ -257,6 +256,8 @@
   header#home {
     height: 100vh;
     max-height: 100vh;
+    mask-image: linear-gradient(to bottom, #000 90%, transparent);
+
   }
 
   header#home .content {
