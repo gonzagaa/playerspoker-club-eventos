@@ -263,6 +263,10 @@
     max-height: 100vh;
   }
 
+  header#home .content .image {
+    margin-top: -5rem;
+  }
+
   header#home .content h1 {
     font-size: 4rem;
   }
