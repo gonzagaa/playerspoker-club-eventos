@@ -151,7 +151,7 @@
     height: 100vh;
     max-height: 100vh;
 
-    mask-image: linear-gradient(to bottom, #000 80%, transparent);
+    mask-image: linear-gradient(to bottom, #000 90%, transparent);
   }
 
   header#home .content {
@@ -248,7 +248,8 @@
   }
 
   header#home .content .image {
-    margin-top: 0;
+    margin-top: -5rem;
+
   }
 }
 
@@ -263,9 +264,6 @@
     max-height: 100vh;
   }
 
-  header#home .content .image {
-    margin-top: -5rem;
-  }
 
   header#home .content h1 {
     font-size: 4rem;
